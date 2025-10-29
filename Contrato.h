@@ -1,0 +1,6 @@
+#ifndef CONTRATO_H_INCLUDED
+#define CONTRATO_H_INCLUDED
+
+
+
+#endif // CONTRATO_H_INCLUDED

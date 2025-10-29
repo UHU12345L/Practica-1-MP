@@ -1,0 +1,90 @@
+# depslib dependency file v1.0
+1761745823 source:c:\users\usuario\desktop\practica1mp\main.cpp
+	<cstdlib>
+	<iostream>
+	<iomanip>
+	"Fecha.h"
+	"Cliente.h"
+	"Contrato.h"
+	"ContratoTP.h"
+	"ContratoMovil.h"
+	"Empresa.h"
+
+1760002601 source:c:\users\usuario\desktop\practica1mp\src\cliente.cpp
+	<cstdlib>
+	<cstring>
+	<iomanip>
+	<sstream>
+	"Cliente.h"
+
+1760002601 c:\users\usuario\desktop\practica1mp\include\cliente.h
+	<iostream>
+	"Fecha.h"
+
+1761566058 c:\users\usuario\desktop\practica1mp\include\fecha.h
+	<iostream>
+
+1759998641 source:c:\users\usuario\desktop\practica1mp\src\fecha.cpp
+	"Fecha.h"
+
+1761565894 source:c:\users\usuario\desktop\practica1mp\src\contratomovil.cpp
+	"ContratoMovil.h"
+	<cstring>
+	<iomanip>
+
+1761565403 c:\users\usuario\desktop\practica1mp\include\contratomovil.h
+	"Contrato.h"
+	<cstring>
+
+1761565694 c:\users\usuario\desktop\practica1mp\include\contrato.h
+	<iostream>
+	"Fecha.h"
+
+1761566086 source:c:\users\usuario\desktop\practica1mp\src\contrato.cpp
+	"Contrato.h"
+
+1760003039 c:\users\usuario\desktop\practica1mp\contrato.h
+
+1760911728 c:\users\usuario\desktop\practica1mp\include\contratotp.h
+	"Contrato.h"
+
+1761565867 source:c:\users\usuario\desktop\practica1mp\src\contratotp.cpp
+	"ContratoTP.h"
+	<iomanip>
+
+1761139160 c:\users\usuario\desktop\practica1mp\include\empresa\contrato.h
+	<iostream>
+	"Fecha.h"
+
+1760915328 c:\users\usuario\desktop\practica1mp\include\empresa\contratotp.h
+	"Contrato.h"
+
+1760809762 c:\users\usuario\desktop\practica1mp\include\empresa\contratomovil.h
+	"Contrato.h"
+	<cstring>
+
+1761138577 source:c:\users\usuario\desktop\practica1mp\src\empresa\contratotp.cpp
+	"empresa/ContratoTP.h"
+	<iomanip>
+
+1761138607 source:c:\users\usuario\desktop\practica1mp\src\empresa\contrato.cpp
+	"empresa/Contrato.h"
+
+1761138612 source:c:\users\usuario\desktop\practica1mp\src\empresa\contratomovil.cpp
+	"empresa/ContratoMovil.h"
+	<cstring>
+	<iomanip>
+
+1761745947 c:\users\usuario\desktop\practica1mp\include\empresa.h
+	"Cliente.h"
+	"Contrato.h"
+	"ContratoTP.h"
+	"ContratoMovil.h"
+	<iostream>
+
+1761745947 source:c:\users\usuario\desktop\practica1mp\src\empresa.cpp
+	"Empresa.h"
+	<typeinfo>
+	<cstring>
+	<iomanip>
+
