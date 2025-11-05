@@ -10,7 +10,7 @@
     int nContratosActual;
     int capacidadContratos;*/
 
-Empresa::Empresa()
+Empresa::Empresa(): nmaxcli(100)
 {
     nClientes=0;
     for(int i=0; i<MAX_CLIENTES; i++){

@@ -47,10 +47,10 @@ void ContratoMovil:: setNacionalidad(const char* nac)
 }
 void ContratoMovil::ver() const
 {
-    cout<<getDniContrato()<<" (" <<getIdContrato()<<" - ";
-    Fecha f= getFechaContrato();
-    f.ver();
-    cout<<") "<<minutosHablados<<"m, "<<nacionalidad<<" "<<precioMinuto<<"€";
+    cout << getDniContrato() << " (" << getIdContrato() << " - ";
+    cout << getFechaContrato();
+    cout << ") " << minutosHablados << "m, " << nacionalidad << " "
+         << std::fixed << std::setprecision(2) << precioMinuto;
 }
 double ContratoMovil::factura() const
 {
@@ -62,6 +62,6 @@ std::ostream& operator<<(std::ostream& os, const ContratoMovil& cm) {
        << cm.getMinutosHablados() << "m, "
        << cm.getNacionalidad() << " "
        << std::fixed << std::setprecision(2) << cm.getPrecioMinuto()
-       << " - " << std::fixed << std::setprecision(2) << cm.factura() << "€";
+       << " - " << std::fixed << std::setprecision(2) << cm.factura() << "â‚¬";  // âœ… AÃ‘ADIR ESTO
     return os;
 }

@@ -17,6 +17,9 @@ using namespace std;
     //operator==
     //operator <<
 
+    //no se permite crear métodos y/o funciones que no sean los invocados en dicho main( ).
+    //Cliente debe ser lo más robusta posible
+    //Las funciones amigas rompen el principio de encapsulamiento de la información, rompiendo la robusted de la clase al permitir que funciones ajenas a ella puedan acceder a su parte privada
 class Cliente {
   long int dni;
   char *nombre;

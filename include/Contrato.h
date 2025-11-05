@@ -14,7 +14,7 @@ class Contrato
     public:
         Contrato(long dniCon, const Fecha& f);
         Contrato(const Contrato& other); //constructor de copia para ids unicos
-        virtual ~Contrato()=default;
+        virtual ~Contrato();
         int getIdContrato() const {return idContrato;}
         long int getDniContrato() const {return dniContrato;}
         Fecha getFechaContrato()const {return fechaContrato;}
@@ -28,7 +28,6 @@ class Contrato
                 //no se puede crear objeto Contrato
 
         friend std::ostream& operator<<(std::ostream& os, const Contrato& c);
-
 };
 
 #endif // CONTRATO_H

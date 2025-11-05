@@ -1,10 +1,10 @@
 #include "Fecha.h"
 
-Fecha::Fecha(const int &dia, const int &m, const int &anio) {
+Fecha::Fecha( int dia,  int m,  int anio) {
     this->setFecha(dia, m, anio);
 }
 
-void Fecha::setFecha(const int &dia, const int &mes, const int &a) {
+void Fecha::setFecha( int dia,  int mes, int a) {
     int dmax, diaMes[] = {0,31,28,31,30,31,30,31,31,30,31,30,31};
     this->anio=a; //debo asignar año para que al llamar a bisiesto() tenga el año bien
     if (this->bisiesto())
@@ -73,7 +73,7 @@ Fecha Fecha::operator++(int i){ //f++
     return copia;
 }
 
-Fecha Fecha::operator+(const int &i) const { // f + 5
+Fecha Fecha::operator+( int i) const { // f + 5
     if (i <= 0) return *this;
 
     int diaMes[] = {0,31,28,31,30,31,30,31,31,30,31,30,31};
@@ -108,11 +108,11 @@ Fecha Fecha::operator+(const int &i) const { // f + 5
     return suma;
 }
 
-Fecha operator+(const int &i, const Fecha &f){
+Fecha operator+( int i, const Fecha &f){
     return f+i;
   }
 
-std::ostream& operator<<(std::ostream &os, const Fecha &f) {
+ostream& operator<<(ostream &os, const Fecha &f) {
   static const char* mesES[13] ={"", "ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"};
   if (f.getDia() < 10) os << '0';
   os << f.getDia() << ' ' << mesES[f.getMes()] << ' ' << f.getAnio();

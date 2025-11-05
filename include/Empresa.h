@@ -10,6 +10,7 @@
 #include "ContratoMovil.h" // definicion de la clase ContratoMovil
 #include <iostream>
 
+//Empresa polimórfica
 class Empresa
 {
 private:
@@ -17,6 +18,8 @@ private:
     static const int MAX_CLIENTES = 100;
     Cliente* clientes[MAX_CLIENTES];  // Array de punteros a Cliente
     int nClientes;                     // Número actual de clientes
+
+    const int nmaxcli;
 
     // Array DINÁMICO de contratos
     Contrato** contratos;  // Puntero a array de punteros a Contrato
